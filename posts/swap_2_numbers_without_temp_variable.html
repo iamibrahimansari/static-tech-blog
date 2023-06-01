@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="keywords"
+            content="C programming, swapping, without temp, without temporary"
+        />
+        <meta
+            name="description"
+            content="In this post we will learn that how can we swap given 2 numbers with each other without using any temporary variable."
+        />
+        <meta http-equiv="refresh" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>swap 2 numbers without using temporary variable</title>
+    </head>
+    <body>
+        <main class="post">
+            <div class="post__article">
+                <div class="post__author_date">
+                    <p class="author">Author:</p>
+                    <p class="date">Date:</p>
+                    <p class="date">IIbrahimm</p>
+                    <p class="date">Dec 26th, 2021</p>
+                </div>
+
+                <div class="question">
+                    <h1 class="question__statement">
+                        Write a program in C programming language to swap 2
+                        given numbers without using temporary variable?
+                    </h1>
+                </div>
+
+                <div class="description">
+                    <p class="description__text">
+                        Swapping means change the value of two variables with
+                        each other. Previous question where we need to swap 2
+                        numbers using temporary variables. There we can still
+                        swap the floating point variables because there is
+                        temporary variable available but in this question no
+                        temporary variable. So we can never take a floating
+                        point value otherwise we will get always wrong answer.
+                        It means that without temporary variable we can't swap 2
+                        non integer variables. It is possible to swap both
+                        integer as well as floating point number only using temp
+                        variable.
+                    </p>
+                    <p class="description__text">
+                        Your job is to take 2 integer numbers and swap them
+                        without taking help of any third or temporary variable
+                        as well as print them on screen as per the outout
+                        standards which is shown beloe. If user enter a floating
+                        point number then print "Your input is invalid. Please
+                        enter integer numbers."
+                    </p>
+                    <div class="description__example">
+                        <p class="description__example-p">Example 1</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter 2 integer numbers: 5 10
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Before Swapping => First Number: 5 and Second
+                                Number: 10
+                            </p>
+                            <p class="description__output-text">
+                                After Swapping => First Number: 10 and Second
+                                Number: 5
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                User entered 5 as First Number and 10 as Second
+                                Number. After swapping 10 becomes First Number
+                                and 5 becomes Second Number.
+                            </p>
+                        </div>
+                        <p class="description__example-p">Example 2</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter 2 integer numbers: -5 10
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Before Swapping => First Number: -5 and Second
+                                Number: 10
+                            </p>
+                            <p class="description__output-text">
+                                After Swapping => First Number: 10 and Second
+                                Number: -5
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                User entered -5 as First Number and 10 as Second
+                                Number. After swapping 10 becomes First Number
+                                and -5 becomes Second Number.
+                            </p>
+                        </div>
+                        <p class="description__example-p">Example 3</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter 2 integer numbers: -100 -8
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Before Swapping => First Number: -100 and Second
+                                Number: -8
+                            </p>
+                            <p class="description__output-text">
+                                After Swapping => First Number: -8 and Second
+                                Number: -100
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                User entered -100 as First Number and -8 as
+                                Second Number. After swapping -8 becomes First
+                                Number and -100 becomes Second Number.
+                            </p>
+                        </div>
+                        <p class="description__example-p">Example 4</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter 2 integer numbers: 100 8.678
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Your input is invalid. Please enter integer
+                                numbers.
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                No Explanation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h2 class="question__statement question__show-text">
+                        Try yourself first before see the code.
+                    </h2>
+                </div>
+
+                <a href="#panel" class="code-button" onclick="myFunction()"
+                    >Show me code</a
+                >
+
+                <div class="code" id="panel">
+                    <img
+                        src="/images/swap-without-temp.PNG"
+                        alt="swap_2_numbers_using_temp_variable"
+                        class="code__program"
+                    />
+                </div>
+                <!-- link for go back to the index.html -->
+                <a href="../posts_thumbnail/blog_post_2.html" class="go-back"
+                    >Go back</a
+                >
+            </div>
+        </main>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

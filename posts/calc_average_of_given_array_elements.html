@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="keywords"
+            content="C programming, Array, Average of array elements"
+        />
+        <meta
+            name="description"
+            content="In this post we will learn that how can we calculate or find the average of natural numbers as elements of given array by using C programming language."
+        />
+        <meta http-equiv="refresh" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>find average of given elements of integer array</title>
+    </head>
+    <body>
+        <main class="post">
+            <div class="post__article">
+                <div class="post__author_date">
+                    <p class="author">Author:</p>
+                    <p class="date">Date:</p>
+                    <p class="date">IIbrahimm</p>
+                    <p class="date">Jan 1st, 2022</p>
+                </div>
+
+                <div class="question">
+                    <h1 class="question__statement">
+                        Write a program in C programming language to
+                        find/calculate average of given elements of integer
+                        array?
+                    </h1>
+                </div>
+
+                <div class="description">
+                    <p class="description__text">
+                        An average is a single number taken as representative of
+                        a list of numbers, usually the sum of the numbers
+                        divided by how many numbers are in the list. For
+                        example, the average of the numbers 2, 3, 4, 7, and 9 is
+                        5 because (2 + 3 + 4 + 7 + 9) / 5 = 5
+                    </p>
+                    <p class="description__text">
+                        You are given a size and elements of unsigned integer
+                        array which means non negative integer element. Your job
+                        is to calculate average of elemnts of given array. Size
+                        and elemnts must recieve by the user and make sure that
+                        the size of array given by the user must be natural
+                        number which means greater than 0 otherwise print "Array
+                        can't be constrcut with size 0." if user enter negative
+                        size then print "Array size can't be negative." Elements
+                        of array also must be whole numbers or non-negative
+                        integers otherwise simply print "Sorry, negative element
+                        is not allow." on screen.
+                    </p>
+                    <div class="description__example">
+                        <p class="description__example-p">Example 1</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter the size of given array: 5
+                            </p>
+                            <p class="description__output-text">
+                                Enter 5 elements for given array: 1 2 3 4 5
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Average of elements of given array: 3
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                We have array elements 1, 2, 3, 4 and 5. After
+                                add these elements and divide the sum 15 by
+                                number of elements 5, we get 3.000000 but
+                                display 3 on screen.
+                            </p>
+                        </div>
+                        <p class="description__example-p">Example 2</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter the size of given array: 3
+                            </p>
+                            <p class="description__output-text">
+                                Enter 5 elements for given array: 3 2 9
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Average of elements of given array: 4.667
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                We have array elements 3, 2 and 9. After add
+                                these elements and divide the sum 14 by number
+                                of elements 3, we get 4.666666 but display the
+                                result up-to 3 digits after decimal point.
+                            </p>
+                        </div>
+                        <p class="description__example-p">Example 3</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter the size of given array: 0
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Array can't be construct with size 0.
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                No Explanation.
+                            </p>
+                        </div>
+                        <p class="description__example-p">Example 4</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter the size of given array: -4
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Array size can't be negative.
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                No Explanation.
+                            </p>
+                        </div>
+                        <p class="description__example-p">Example 5</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter the size of given array: 4
+                            </p>
+                            <p class="description__output-text">
+                                Enter 5 elements for given array: 3 2 -5
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Sorry, negative elements are not allowed.
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                No Explanation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h2 class="question__statement question__show-text">
+                        Try yourself first before see the code.
+                    </h2>
+                </div>
+
+                <a href="#panel" class="code-button" onclick="myFunction()"
+                    >Show me code</a
+                >
+
+                <div class="code" id="panel">
+                    <img
+                        src="/images/calc_average_of_array_elements_user_define_function.PNG"
+                        alt="find mean of given array elements"
+                        class="code__program"
+                    />
+                    <img
+                        src="/images/calc_average_of_array_elements_main_function_part1.PNG"
+                        alt="find mean of given array elements"
+                        class="code__program"
+                    />
+                    <img
+                        src="/images/calc_average_of_array_elements_main_function_part2.PNG"
+                        alt="find mean of given array elements"
+                        class="code__program"
+                    />
+                </div>
+                <!-- link for go back to the index.html -->
+                <a href="../index.html" class="go-back">Go back</a>
+            </div>
+        </main>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

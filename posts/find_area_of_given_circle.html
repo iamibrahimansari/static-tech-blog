@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="C programming, area, circle, radius" />
+        <meta
+            name="description"
+            content="In this post we will learn that how can we calculate or find the area of given circle."
+        />
+        <meta http-equiv="refresh" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>find area of given circle</title>
+    </head>
+    <body>
+        <main class="post">
+            <div class="post__article">
+                <div class="post__author_date">
+                    <p class="author">Author:</p>
+                    <p class="date">Date:</p>
+                    <p class="date">IIbrahimm</p>
+                    <p class="date">Jan 2nd, 2022</p>
+                </div>
+
+                <div class="question">
+                    <h1 class="question__statement">
+                        Write a program in C programming language to find /
+                        calculate area of given circle up-to 3 digits after
+                        decimal point, if area contains non zero digit otherwise
+                        convert it into an integer number?
+                    </h1>
+                </div>
+
+                <div class="description">
+                    <p class="description__text">
+                        The area of a circle is the space occupied by the circle
+                        in a two-dimensional plane. Alternatively, the space
+                        occupied within the boundary/circumference of a circle
+                        is called the area of the circle. The formula for the
+                        area of a circle is A = πr<sup>2</sup>, where r is the
+                        radius of the circle. π = 22 / 7.
+                    </p>
+                    <p class="description__text">
+                        You are given radius of circle. Your job is to find area
+                        of given circle. If area of circle doesn't contain any
+                        non-zero digits after decimal point(ex: 13.000000) then
+                        print "13" otherwise print area up to 3 digits after
+                        decimal point. Area can't be negative that's why if user
+                        enter 0 or negative values for radius then print "Your
+                        input is invalid." on screen.
+                    </p>
+                    <div class="description__example">
+                        <p class="description__example1">Example 1</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter radius of given circle: 32.67
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Area of given circle is 3354.462
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                Area of Circle = (22 / 7) x radius x radius.
+                                Here radius is 32.67 which is converted
+                                implicitly into 32.670000 by compiler that's why
+                                (22/7) x 32.670000 x 32.670000 = 3354.462257 but
+                                we have to display area only up to 3 digits
+                                after decimal point that's why we get 3354.462
+                            </p>
+                        </div>
+                        <p class="description__example2">Example 2</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter radius of given circle: 7
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Area of given circle is 154
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                Area of Circle = (22 / 7) x radius x radius.
+                                Here radius is 7 which is converted implicitly
+                                into 7.000000 by compiler that's why (22/7) x
+                                7.000000 x 7.000000 = 154.000000 but we have
+                                converted into integer that's why we get 154
+                            </p>
+                        </div>
+                        <p class="description__example2">Example 2</p>
+                        <div class="description__test">
+                            <p class="description__input">Input</p>
+                            <p class="description__input-text">
+                                Enter radius of given circle: 0
+                            </p>
+                            <p class="description__output">Output</p>
+                            <p class="description__output-text">
+                                Your input is invalid.
+                            </p>
+                            <p class="description__explanation-text">
+                                Explanation
+                            </p>
+                            <p class="description__explanation">
+                                Radius of circle can't be negative that's why
+                                user input which is 0 is invalid.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h2 class="question__statement question__show-text">
+                        Try yourself first before see the code.
+                    </h2>
+                </div>
+
+                <a href="#panel" class="code-button" onclick="myFunction()"
+                    >Show me code</a
+                >
+
+                <div class="code" id="panel">
+                    <img
+                        src="/images/calc_area_of_circle_user_define_function.PNG"
+                        alt="find area of given circle"
+                        class="code__program"
+                    />
+                    <img
+                        src="/images/calc_area_of_circle_main_function.PNG"
+                        alt="find area of given circle"
+                        class="code__program"
+                    />
+                </div>
+                <!-- link for go back to the index.html -->
+                <a href="../index.html" class="go-back">Go back</a>
+            </div>
+        </main>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
